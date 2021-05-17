@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estanteria</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body background="{% static 'recursos/fondomadera.jpg' %}">
+    <h1>Estanteria S.A. de C.V.</h1>
+    <a href="http://127.0.0.1:8000/admin" style="text-align: center;" >Ir a administracion:  <img class="imagen" text-align: center; src="{% static 'recursos/admin.png' %}"></a>
+    <main>
+        <header style="text-align: center;">
+            <h1>¡ Bienvenido !</h1>
+            <p style="font-size: 16px; text-align: center; ">Bienvenido a nuestra pagina oficial</p>
+        </header>
+    <ul id="menu-principal">
+        <li><a href="http://127.0.0.1:8000/">Inicio  <img class="imagen" src="{% static 'recursos/inicio.png' %}"></a></li>
+        <li><a href="http://127.0.0.1:8000/pagina2">Quienes somos <img class="imagen" src="{% static 'recursos/historia.png' %}"></a></li>
+        <li><a href="http://127.0.0.1:8000/pagina3">Productos <img class="imagen" src="{% static 'recursos/jugadores.png' %}"></a></li>
+        <li><a href="http://127.0.0.1:8000/pagina4">Ventas <img class="imagen" src="{% static 'recursos/venta.png' %}"></a></li>
+        <li><a href="http://127.0.0.1:8000/pagina5">Contacto <img class="imagen" src="{% static 'recursos/contacto.png' %}"></a></li>
+    </ul>
+    <article>
+         <h2>Quienes Somos</h2>
+         <img style="display: block; margin: auto;" width="800px" src="{% static 'recursos/quienesomos.jpg' %}">
+         <p id="tigres-nacimiento">Estantes S.A. de C.V. comenzó en los grandes almacenes de Linköping en 1984, pero la fundación de este programa de lealtad ya se había establecido en 1952, cuando Ingvar Kamprad inició el Club de Plata.
+
+Ingvar sabía la importancia de tener una relación fuerte y duradera con sus clientes, así que a través del club aprovechó la oportunidad para comunicarse directamente y aprender sobre las personas, lo que querían y necesitaban.
+
+Desde que el Club de Plata comenzó, muchas cosas han cambiado, pero nuestra visión sigue siendo la misma que la de Ingvar. En IKEA Family, siempre serás nuestra fuente de inspiración. Queremos conocerte, saber lo que te gusta, tus ideas y planes para poder ofrecerte lo mejor en IKEA.
+
+Somos la familia más grande del mundo y seguiremos trabajando incansablemente para que juntos hagamos posible el hogar de tus sueños.<br>
+        </p>
+     </article>
+    </main>
+    <footer>
+        <address id="contacto">
+            <br>
+            Contacto <br>
+            Correo: jpagm140100@gmail.com <br>
+        </address>
+    </footer>
+</body>
+</html>

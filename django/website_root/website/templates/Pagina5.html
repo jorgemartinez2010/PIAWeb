@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estanteria</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body background="{% static 'recursos/fondomadera.jpg' %}">
+    <h1>Estanteria S.A. de C.V.</h1>
+    <a href="http://127.0.0.1:8000/admin" style="text-align: center;" >Ir a administracion:  <img class="imagen" text-align: center; src="{% static 'recursos/admin.png' %}"></a>
+    <main>
+        <header style="text-align: center;">
+            <h1>¡ Bienvenido !</h1>
+            <p style="font-size: 16px; text-align: center; ">Bienvenido a nuestra pagina oficial</p>
+        </header>
+    <ul id="menu-principal">
+        <li><a href="http://127.0.0.1:8000/">Inicio  <img class="imagen" src="{% static 'recursos/inicio.png' %}"></a></li>
+        <li><a href="http://127.0.0.1:8000/pagina2">Quienes somos <img class="imagen" src="{% static 'recursos/historia.png' %}"></a></li>
+        <li><a href="http://127.0.0.1:8000/pagina3">Productos <img class="imagen" src="{% static 'recursos/jugadores.png' %}"></a></li>
+        <li><a href="http://127.0.0.1:8000/pagina4">Ventas <img class="imagen" src="{% static 'recursos/venta.png' %}"></a></li>
+        <li><a href="http://127.0.0.1:8000/pagina5">Contacto <img class="imagen" src="{% static 'recursos/contacto.png' %}"></a></li>
+    </ul>
+     <article>
+         <h2>Contactanos</h2>
+     </article>
+    </main>
+    <form action="#" target="" method="get" name="formDatosPersonales">
+
+	    <label for="nombre">Nombre</label>
+	    <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre"/>
+
+	    <label for="apellidos">Apellidos</label>
+	    <input type="text" name="apellidos" id="apellidos" placeholder="Apellido paterno"/>
+
+	    <label for="email" />Email</label>
+	    <input type="email" name="email" id="email" placeholder="Direccion de correo electronico" required />
+
+	    <label for="asunto">Asunto</label>
+	    <input type ="text" name="asunto" id="asunto" placeholder="Asunto"/>
+
+	    <label for="mensaje">Mensaje</label>
+	    <textarea name="mensaje" for="mensaje" placeholder="Describe brevemente en menos de 300 carácteres" maxlength="300"></textarea>
+	    <input type="submit" name="enviar" value="Enviar"/>
+    </form>
+    <footer>
+        <address id="contacto">
+            <br>
+            Contacto <br>
+            Correo: jpagm140100@gmail.com <br>
+        </address>
+    </footer>
+</body>
+</html>
